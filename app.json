@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "Atlas - AI Emotional Companion",
+    "slug": "atlas-ai-emotional-companion",
+    "version": "1.0.0",
+    "description": "Atlas - AI-Powered Emotional Intelligence Platform",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "scheme": "atlas",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#667eea"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.atlas.emotional.companion",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Atlas uses Face ID for secure authentication to protect your emotional wellness data.",
+        "NSCameraUsageDescription": "Atlas may use the camera for profile photos (optional).",
+        "NSMicrophoneUsageDescription": "Atlas may use the microphone for voice input features (optional).",
+        "NSUserTrackingUsageDescription": "Atlas uses anonymized analytics to improve your experience. Your personal conversations remain private."
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#667eea"
+      },
+      "package": "com.atlas.emotional.companion",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.USE_BIOMETRIC"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "039c1200-fe01-4875-b378-dda7f524d1fb"
+      }
+    },
+    "updates": {
+      "enabled": false,
+      "checkAutomatically": "NEVER",
+      "fallbackToCacheTimeout": 0
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "owner": "jason_carelse"
+  }
+}
